@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeamUp Header</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+    div{
+        border: 2px solid red;
+    }
+    .navbar {
+      background-color: white;
+      padding: 10px 15px;
+    }
+    .navbar-brand {
+      color: #007bff;
+      font-weight: bold;
+    }
+    .nav-link {
+      color: #007bff;
+      margin-right: 15px;
+    }
+    .btn-contact {
+      background-color: #007bff;
+      color: white;
+      padding: 5px 20px;
+      border-radius: 5px;
+      border: none;
+      
+    }
+    .social-icons a {
+      color: #007bff;
+      margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px; /* Size of the box */
+      height: 40px; /* Size of the box */
+      border-radius: 5px; /* Square corners for a boxy look */
+      font-size: 20px;
+      transition: background-color 0.3s, color 0.3s;
+      text-align: center; /* Center the icon within the box */
+    }
+    .social-icons .fa-facebook-f {
+    background-color: grey; /* Default background color */
+    color: white; /* Icon color */
+    width: 40px;
+    height: 20px; /* Ensure the height matches the width for a square box */
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.social-icons .fa-facebook-f:hover {
+    background-color: #3b5998; /* Facebook blue on hover */
+    color: white; /* Ensure icon color remains white on hover */
+}
+
+    .social-icons .fa-twitter {
+      background-color: grey; /* Twitter blue */
+      color: white;
+    }
+    .social-icons .fa-linkedin-in {
+      background-color: grey; /* LinkedIn blue */
+      color: white;
+    }
+
+    .social-icons .fa-linkedin-in:hover {
+      background-color:#0077b5; /* LinkedIn blue */
+      color: white;
+    }
+    .social-icons .fa-instagram,
+    .social-icons .fa-youtube {
+      background-color: transparent; /* No background for Instagram and YouTube */
+      
+    }
+    .social-icons .fa-facebook-f:hover {
+    background-color: #3b5998; /* Facebook blue on hover */
+    color: white; /* Ensure icon color remains white on hover */
+}
+    .social-icons .fa-twitter:hover
+     {
+        background-color: #1da1f2; /* Darker shade of Facebook blue for hover */
+      color: white; /* Change icon color on hover */
+    }
+    .social-icons .fa-instagram:hover {
+    color: #e4405f; /* Instagram pink */
+    }
+
+    .social-icons .fa-youtube:hover {
+        color: #d81111; /* YouTube red */
+    }
+
+    .hover-blue {
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.hover-blue:hover {
+    color: #007bff; /* Text color on hover */
+    text-decoration: none;
+
+}
+
+.btn-secondary {
+            background-color: transparent;
+            border: 1px solid transparent; /* Optional: to remove the border */
+            color: black; /* Set text color */
+        }
+
+        .btn-secondary:hover, .btn-secondary:focus {
+            background-color: transparent; /* Remove background color on hover and focus */
+            border-color: transparent; /* Remove border color on hover and focus */
+            color: black; /* Ensure text color stays black */
+        }
+
+        /* Customize the dropdown menu */
+        .dropdown-menu {
+            background-color: transparent; /* Remove background color */
+            border: none; /* Remove border */
+            box-shadow: none; /* Remove shadow for a cleaner look */
+        }
+
+        .dropdown-item {
+            color: #007bff !important; /* Set text color */
+            background-color: transparent; /* Remove background color of dropdown items */
+        }
+
+        .dropdown-item:hover {
+            background-color: #007bff !important; /* Set background color on hover */
+            color: white; /* Change text color to white on hover */
+        }
+
+        /* Center the dropup menu */
+        .dropup-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn-contact {
+        background-color: #007bff; /* Button background color */
+        color: white; /* Text color */
+        padding: 10px 20px; /* Padding */
+        border-radius: 5px; /* Rounded corners */
+        border: none; /* Remove border */
+        text-decoration: none; /* Remove underline */
+        font-size: 16px; /* Font size */
+        font-weight: 500; /* Font weight */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center; /* Center text */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    }
+
+    .btn-contact:hover {
+        background-color: white; /* Darker background on hover */
+        color: #0056b3; /* Ensure text color stays white */
+        border: 1px solid #0056b3;
+    }
+  </style>
+  
+  
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/temlio.png" alt="TeamUp Logo" style="height: 70px; width: auto;">
+                </a>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <a class="hover-blue" href="#">Product</a>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <a class="hover-blue" href="#">Pricing</a>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <div class="dropup-center dropup">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" style="font-size: 20px; font-weight: 500;" aria-expanded="false">
+                        Resources
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Action two</a></li>
+                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-2">
+             
+
+                  
+            </div>
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <a class="btn btn-lg btn-contact" href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    
+</body>
+</html>
