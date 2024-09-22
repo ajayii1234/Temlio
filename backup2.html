@@ -479,22 +479,6 @@
     scroll-behavior: smooth; /* Smooth scrolling behavior */
 }
 
-/* For Tablets (768px and below) */
-@media (max-width: 768px) {
-    .custom-carousel {
-        overflow-x: auto; /* Show the scrollbar */
-        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
-    }
-}
-
-/* For Mobile (480px and below) */
-@media (max-width: 480px) {
-    .custom-carousel {
-        overflow-x: auto; /* Show the scrollbar */
-        -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
-    }
-}
-
 .custom-carousel .col-md-3 {
     flex: 0 0 auto; /* Prevent items from growing or shrinking */
     margin-right: 10px; /* Space between the cards */
@@ -674,73 +658,70 @@ text-decoration: none !important;
     padding-top: 0 !important; /* Reset top padding */
 }
 
-.navbar {
-    background-color: white !important; /* Use !important to override default Bootstrap styles */
-}
 
     </style>
 </head>
 <body>
     
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img style="width: 167px; height: 60px;" src="assets/images/temlio.png" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav d-flex flex-row">
-                    <li class="nav-item">
-                        <a class="nav-link hover-blue mx-3" href="#">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hover-blue mx-3" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle hover-blue mx-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Resources
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <!-- <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a> -->
-                        </div>
-                    </li>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img style="width: 167px; height: 60px; margin-right: 180px" src="assets/images/temlio.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link hover-blue" style="margin-right: 180px;" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link hover-blue" style="margin-right: 180px;" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle hover-blue" style="margin-right: 180px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a> -->
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav social-icons" style="margin-right: 180px;">
+                <li class="nav-item">
+                    <a href="#" class="social-icon facebook">
+                        <img src="facebook.png" alt="Facebook Icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="social-icon youtube">
+                        <img src="youTube.png" alt="YouTube Icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="social-icon instagram">
+                        <img src="Instagram.png" alt="Instagram Icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="social-icon twitter">
+                        <img src="Twitter.png" alt="Twitter Icon">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="social-icon linkedin">
+                        <img src="LinkedIn.png" alt="LinkedIn Icon">
+                    </a>
+                </li>
                 </ul>
-                <ul class="navbar-nav d-flex flex-row align-items-center">
-                    <li class="nav-item">
-                        <a href="#" class="social-icon facebook mx-2">
-                            <img src="facebook.png" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="social-icon youtube mx-2">
-                            <img src="youTube.png" alt="YouTube Icon">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="social-icon instagram mx-2">
-                            <img src="Instagram.png" alt="Instagram Icon">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="social-icon twitter mx-2">
-                            <img src="Twitter.png" alt="Twitter Icon">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="social-icon linkedin mx-2">
-                            <img src="LinkedIn.png" alt="LinkedIn Icon">
-                        </a>
-                    </li>
-                </ul>
-                <a class="btn btn-primary btn-contact ml-3" href="#">Contact Us</a>
-            </div>
+            <a class="btn btn-primary btn-contact" href="#">Contact Us</a>
         </div>
-    </nav>
-    
+    </div>
+</nav>
 
 <div class="container-fluid">
     <!-- Background div -->
@@ -753,8 +734,8 @@ text-decoration: none !important;
 
 <div class="row">
     <div class="col-md-12">
-        <div style="width: 100%; height: 100%;" class="content-area"><span style="color: rgba(0, 0, 0, 0.85); font-size: 26px; font-family: Poppins; font-weight: 500; line-height: 30px; word-wrap: break-word">Welcome to</span><span style="color: rgba(0, 0, 0, 0.70); font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word"> </span><span style="color: rgba(216, 45, 43, 0.85); font-size: 32px; font-family: Poppins; font-weight: 900; line-height: 30px; word-wrap: break-word">TEMLIO COMMUNICATIONS</span><span style="color: rgba(0, 0, 0, 0.70); font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word"> </span><span style="color: rgba(0, 0, 0, 0.85); font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word"><br>Empowering Your Business with <br>Cutting-Edge IT Solutions...<br/></span><span style="color: rgba(0, 0, 0, 0.70); font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word">  
-            <br/></span><span style="color: rgba(0, 0, 0, 0.70); font-size: 18px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word">At</span><span style="color: rgba(0, 0, 0, 0.70); font-size: 18px; font-family: Poppins; font-weight: 500; line-height: 30px; word-wrap: break-word"> </span><span style="color: rgba(216, 45, 43, 0.85); font-size: 18px; font-family: Poppins; font-weight: 900; line-height: 30px; word-wrap: break-word">TEMLIO COMMUNICATIONS</span><span style="color: rgba(0, 0, 0, 0.70); font-size: 18px; font-family: Poppins; font-weight: 500; line-height: 30px; word-wrap: break-word">, </span><span style="color: rgba(0, 0, 0, 0.70); font-size: 18px; font-family: Poppins; font-weight: 500; line-height: 30px; word-wrap: break-word">we provide tailored IT services designed to help your business thrive in today’s digital landscape. From seamless call center solutions and innovative SaaS platforms to reliable telecommunications services, our expert team is committed to driving efficiency and growth. Let us simplify your technology needs, so you can focus on what matters most — growing your business.</span></div>
+        <div style="width: 100%; height: 100%;" class="content-area"><span style="color: rgba(0, 0, 0, 0.85); font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word">Welcome to</span><span style="color: rgba(0, 0, 0, 0.70); font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word"> </span><span style="color: rgba(216, 45, 43, 0.85); font-size: 32px; font-family: Poppins; font-weight: 900; line-height: 30px; word-wrap: break-word">TEMLIO COMMUNICATIONS</span><span style="color: rgba(0, 0, 0, 0.70); font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word"> </span><span style="color: rgba(0, 0, 0, 0.85); font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word"><br>Empowering Your Business with <br>Cutting-Edge IT Solutions...<br/></span><span style="color: rgba(0, 0, 0, 0.70); font-size: 32px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word">  
+            <br/></span><span style="color: rgba(0, 0, 0, 0.70); font-size: 22px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word">At</span><span style="color: rgba(0, 0, 0, 0.70); font-size: 18px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word"> </span><span style="color: rgba(216, 45, 43, 0.85); font-size: 22px; font-family: Poppins; font-weight: 900; line-height: 30px; word-wrap: break-word">TEMLIO COMMUNICATIONS</span><span style="color: rgba(0, 0, 0, 0.70); font-size: 18px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word">, </span><span style="color: rgba(0, 0, 0, 0.70); font-size: 22px; font-family: Poppins; font-weight: 600; line-height: 30px; word-wrap: break-word">we provide tailored IT services designed to help your business thrive in today’s digital landscape. From seamless call center solutions and innovative SaaS platforms to reliable telecommunications services, our expert team is committed to driving efficiency and growth. Let us simplify your technology needs, so you can focus on what matters most — growing your business.</span></div>
     </div>
 </div>
 
@@ -923,24 +904,19 @@ text-decoration: none !important;
         <div class="row">
             <div class="col-md-5 pl-5 pr-5">
                 <div class="pb-3 pt-3" style="color: rgba(0, 102, 164, 0.85); font-size: 20px; font-family: Poppins; font-weight: 600; word-wrap: break-word">SEND US AN INSTANT MESSAGE</div> 
-
-                <form id="secondForm" onsubmit="event.preventDefault(); validateSecondForm();">
                 <div class="custom-input mb-2">
                     <img src="Frame 146.png" alt="Icon">
-                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <input type="text" placeholder="Full Name">
                 </div>
 
                 <div class="custom-input mb-4">
                     <img src="Frame 147.png" alt="Icon">
-                    <input type="text" id="emailAddress" placeholder="email address" required>
+                    <input type="text" placeholder="email address">
                 </div>
                 <div class="custom mb-3">
-                    <textarea placeholder="Enter your message" rows="3" id="messageText" required></textarea>
+                    <textarea placeholder="Enter your message" rows="3"></textarea>
                 </div>
                 <button class="custom-button" type="submit">Send</button>
-            </form>
-
-
             </div>
             <div class="col-md-7">
                 <img src="hand.jpg" class="img-fluid custom-img" alt="Responsive Image">
@@ -1029,87 +1005,6 @@ text-decoration: none !important;
         }, 3000); // 3000 milliseconds = 3 seconds
     });
 </script>
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<script>
-    function resetSecondForm() {
-        document.getElementById('fullName').value = '';
-        document.getElementById('emailAddress').value = '';
-        document.getElementById('messageText').value = '';
-    }
-
-    function sendEmailSecondForm() {
-        var fullName = document.getElementById('fullName').value;
-        var emailAddress = document.getElementById('emailAddress').value;
-        var message = document.getElementById('messageText').value;
-
-        var messageBody = "Full Name: " + fullName +
-            "<br/> Email Address: " + emailAddress +
-            "<br/> Message: " + message;
-
-        return Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "ajayipaulolu@gmail.com",
-            Password: "1940EDAD63C2C6C84A53BCD3CE2ECB2BD714",
-            port: 2525,
-            To: "ajayipaulolu@gmail.com",  // Updated recipient email
-            From: "ajayipaulolu@gmail.com",
-            Subject: "New Message From Website",
-            Body: messageBody
-        }).then(
-            message => {
-                if (message == 'OK') {
-                    Swal.fire("Success!", "Your message was sent successfully!", "success");
-                    resetSecondForm();
-                } else {
-                    Swal.fire("Error", "There was an issue sending your message", "error");
-                }
-            }
-        ).catch(error => {
-            Swal.fire("Error", "Failed to send email: " + error, "error");
-        });
-    }
-
-    function validateSecondForm() {
-        var fullName = document.getElementById('fullName');
-        var emailAddress = document.getElementById('emailAddress');
-        var messageText = document.getElementById('messageText');
-        var isValid = true;
-
-        if (!fullName.value.trim()) {
-            fullName.classList.add('invalid');
-            isValid = false;
-        } else {
-            fullName.classList.remove('invalid');
-        }
-
-        if (!emailAddress.value.trim()) {
-            emailAddress.classList.add('invalid');
-            isValid = false;
-        } else {
-            emailAddress.classList.remove('invalid');
-        }
-
-        if (!messageText.value.trim()) {
-            messageText.classList.add('invalid');
-            isValid = false;
-        } else {
-            messageText.classList.remove('invalid');
-        }
-
-        if (isValid) {
-            sendEmailSecondForm();
-        } else {
-            Swal.fire("Error", "Please fill in all fields", "error");
-        }
-    }
-</script>
-
 
 </body>
 </html>
