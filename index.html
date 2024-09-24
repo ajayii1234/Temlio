@@ -562,23 +562,33 @@
 
 .btn-contact {
     background-color: #0066A4 !important; /* Button background color */
-    color: white; /* Text color */
-    padding: 5px 15px; /* Reduced padding for smaller size */
-    border-radius: 5px !important; /* Remove rounded corners */
-    text-decoration: none; /* Remove underline */
-    font-size: 16px; /* Font size */
-    font-weight: 500; /* Font weight */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center; /* Center text */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    color: white !important; /* Text color */
+    padding: 2vh 5vh !important; /* Smaller padding using vh for height scaling */
+    border-radius: 1vh !important; /* Rounded corners scaled by viewport height */
+    text-decoration: none !important; /* Remove underline */
+    font-size: 2.5vh !important; /* Font size scaled by viewport height */
+    font-weight: 500 !important; /* Font weight */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important; /* Center text */
+    transition: background-color 0.3s ease, color 0.3s ease !important; /* Smooth transition */
+    
+    /* Ensure no unwanted inherited styles affect the button */
+    width: auto !important;
+    max-width: 23vh !important; /* Adjust based on viewport height */
+    height: auto !important;
+    line-height: normal !important; /* Prevent large line-height */
+    margin: 0 !important; /* Remove any unwanted margin */
+    box-sizing: border-box !important; /* Ensure padding is counted inside width/height */
 }
 
 .btn-contact:hover {
     background-color: white !important; /* Lighter background on hover */
     color: #0056b3 !important; /* Change text color on hover */
-    border: 1px solid #0056b3 !important;
+    border: 0.2vh solid #0056b3 !important; /* Border size using vh */
 }
+
+
 
 
 .hover-blue {
