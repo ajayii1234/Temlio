@@ -319,7 +319,7 @@
 
         .custom-input {
             width: 100%;
-            padding: 16px 10px;
+            padding: 2.2vh 1.5vh;
             background: white;
             border-bottom-left-radius: 10px;
             border-top-left-radius: 10px;
@@ -645,8 +645,8 @@ text-decoration: none !important;
         .btn {
             border-bottom-right-radius: 10px;
             border-top-right-radius: 10px;
-            width: 185px; /* Adjust width automatically */
-            height: 57px; /* Increase height */
+            width: 14vw; /* Adjust width relative to viewport width */
+            height: 7.9vh; /* Increase height relative to viewport height */
             padding: 0 20px; /* Adjust padding for button size */
             color: white;
             background-color: #D92C09;
@@ -655,6 +655,7 @@ text-decoration: none !important;
             display: flex;
             align-items: center; /* Center text vertically */
             justify-content: center; /* Center text horizontally */
+            font-size: 2.2vh;
         }
 
         .btn:hover{
@@ -937,24 +938,35 @@ text-decoration: none !important;
         </div>
 
         <div class="row" style="background: #0066A4;">
-            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
-                <div class="text-center mb-4 pt-3">
-                    <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 700; word-wrap: break-word;">Sign Up</span>
-                    <span style="color: rgba(0, 0, 0, 0.80); font-size: 20px; font-family: Poppins; font-weight: 600; word-wrap: break-word;"></span>
-                    <span style="color: white; font-size: 20px; font-family: Poppins; font-weight: 500; word-wrap: break-word;">to our newsletter to receive only important updates on upcoming products and services</span>
-                </div>
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
                 
-
-                <div>
-                    <div class="custom-input-container">
-                        <div class="custom-input">
-                            <img src="ic3.png" alt="Icon">
-                            <input type="text" placeholder="Enter Email address">
+                <!-- Row for the Sign Up text -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <div class="text-center mb-4 pt-3">
+                            <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 700; word-wrap: break-word;">Sign Up</span>
+                            <span style="color: rgba(0, 0, 0, 0.80); font-size: 20px; font-family: Poppins; font-weight: 600; word-wrap: break-word;"></span>
+                            <span style="color: white; font-size: 20px; font-family: Poppins; font-weight: 500; word-wrap: break-word;">to our newsletter to receive only important updates on upcoming products and services</span>
                         </div>
-                        <button class="btn" type="button">Sign Up</button>
                     </div>
-                <div style="color: rgba(0, 0, 0, 0.70); font-size: 10px; font-family: Poppins; font-weight: 500; word-wrap: break-word"> <img style="width: 30px; height: 30px" src="Frame 252.png" />We respect your privacy</div>
-            </div>
+                </div>
+        
+                <!-- Row for the input field and button -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-10 col-sm-7">
+                        <div class="custom-input-container">
+                            <div class="custom-input">
+                                <img src="ic3.png" alt="Icon">
+                                <input type="text" placeholder="Enter Email address">
+                            </div>
+                            <button class="btn" type="button">Sign Up</button>
+                        </div>
+                        <div style="color: rgba(0, 0, 0, 0.70); font-size: 10px; font-family: Poppins; font-weight: 500; word-wrap: break-word;"> 
+                            <img style="width: 30px; height: 30px" src="Frame 252.png" />We respect your privacy
+                        </div>
+                    </div>
+                </div>
+        
             </div>
         </div>
         
