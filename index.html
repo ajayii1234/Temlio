@@ -643,8 +643,8 @@ text-decoration: none !important;
         }
 
         .btn {
-            border-bottom-right-radius: 10px;
-            border-top-right-radius: 10px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
             width: 14vw; /* Adjust width relative to viewport width */
             height: 7.7vh; /* Increase height relative to viewport height */
             padding: 0 20px; /* Adjust padding for button size */
@@ -719,6 +719,11 @@ text-decoration: none !important;
     background: #0066A4;
 }
 
+.icon-size {
+        width: 5vh;
+        height: 5vh;
+    }
+
     </style>
 </head>
 <body>
@@ -753,27 +758,27 @@ text-decoration: none !important;
                 <ul class="navbar-nav d-flex flex-row align-items-center">
                     <li class="nav-item">
                         <a href="#" class="social-icon facebook mx-2">
-                            <img src="facebook.png" alt="Facebook Icon">
+                            <img src="images/fb1.png" alt="Facebook Icon" class="icon-size">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="social-icon youtube mx-2">
-                            <img src="youTube.png" alt="YouTube Icon">
+                            <img src="images/youtube.png" alt="YouTube Icon" class="icon-size">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="social-icon instagram mx-2">
-                            <img src="Instagram.png" alt="Instagram Icon">
+                            <img src="images/instagram.png" alt="Instagram Icon" class="icon-size">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="social-icon twitter mx-2">
-                            <img src="Twitter.png" alt="Twitter Icon">
+                            <img src="images/x2.png" alt="Twitter Icon" class="icon-size">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="social-icon linkedin mx-2">
-                            <img src="LinkedIn.png" alt="LinkedIn Icon">
+                            <img src="images/li2.png" alt="LinkedIn Icon" class="icon-size">
                         </a>
                     </li>
                 </ul>
@@ -814,7 +819,7 @@ text-decoration: none !important;
         <!-- Right column (image and circle) -->
         <div class="col-12 col-lg-6 position-relative">
             <!-- Image -->
-            <img src="tem2.png" width="790px" height="460px" class="img-fluid" alt="Image" id="largeDeviceImage" style="position: relative; z-index: 2;">
+            <img src="images/hero.png" width="790px" height="460px" class="img-fluid" alt="Image" id="largeDeviceImage" style="position: relative; z-index: 2;">
             <!-- Circular element positioned on the image -->
             <div class="circle"></div>
         </div>
@@ -925,14 +930,14 @@ text-decoration: none !important;
         <div class="row" style="display: flex; justify-content: center; align-items: center;">
             <span><img style="width: 70px; height: 70px" src="call.jpg" /></span>
             <span style="color: rgba(0, 0, 0, 0.85); font-size: 24px; font-family: Poppins; font-weight: 700; line-height: 30px; margin-left: 10px;">
-                HAVE A CONVERSATION WITH SEUN
+                HAVE A CONVERSATION WITH US
             </span>
         </div>
 
         <div class="row mb-3">
             <div class="col-md-12" style="display: flex; justify-content: center; align-items: center;">
                 <button class="text-center call-button" style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; background: rgba(0, 102, 164, 0); border-radius: 5px; border: 1px rgba(0, 0, 0, 0.80) solid; color: rgba(0, 0, 0, 0.80); font-size: 16px; font-family: Poppins; font-weight: 700; line-height: 30px; cursor: pointer; display: inline-flex; justify-content: center; align-items: center;">
-                    Call Seun
+                    Call
                 </button>
             </div>
         </div>
@@ -945,7 +950,7 @@ text-decoration: none !important;
                     <div class="col-lg-8 col-md-10 col-sm-12">
                         <div class="text-center mb-4 pt-3">
                             <span style="color: black; font-size: 24px; font-family: Poppins; font-weight: 700; word-wrap: break-word;">Sign Up</span>
-                            <span style="color: rgba(0, 0, 0, 0.80); font-size: 20px; font-family: Poppins; font-weight: 600; word-wrap: break-word;"></span>
+                            
                             <span style="color: white; font-size: 20px; font-family: Poppins; font-weight: 500; word-wrap: break-word;">to our newsletter to receive only important updates on upcoming products and services</span>
                         </div>
                     </div>
@@ -1045,11 +1050,11 @@ text-decoration: none !important;
     const button = document.querySelector('.call-button');
 
     button.addEventListener('mouseover', function() {
-        button.textContent = 'Call Seun Now';
+        button.textContent = 'Call Now';
     });
 
     button.addEventListener('mouseout', function() {
-        button.textContent = 'Call Seun';
+        button.textContent = 'Call';
     });
 </script>
 
